@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.videos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+    padding: auto;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    border-bottom: rgb(80, 80, 80);
+    color: rgb(221, 221, 221);
+}
+
+.video_lofi{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.icons{
+    text-align: center;
+}
+hr{
+    color: rgb(95, 95, 95);; 
+    width: auto;
+    height: auto;
+} 

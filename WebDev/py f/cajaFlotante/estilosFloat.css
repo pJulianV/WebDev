@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(204, 204, 204);
+
+}
+
+.formulario{
+    margin: 1px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(156, 156, 156);
+    border-top-color: rgb(255, 247, 238);
+    background-color: rgb(255, 247, 238);
+    border-radius: 3px;
+    height: auto;
+}
+
+.botones{
+    width: 100px;
+    height: 20px;
+    display: inline-block;
+}
+.boton1{
+    background-color: rgb(85, 127, 216);
+    color: white;
+}
+.boton2{
+    background-color: rgb(139, 139, 139);
+    color: white;
+}

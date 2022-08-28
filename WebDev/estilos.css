@@ -1,0 +1,33 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(92, 156, 252);
+}
+
+nav {
+    background-color: rgb(189, 215, 255);
+}
+
+#logo {
+    width: 10rem;
+    height: 100%;
+    object-fit: cover;
+}
+.header{
+    background-color: rgb(54, 54, 151);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.9rem;
+}
+img{
+    width: 300px;
+}
+
+.parrafo{
+    background-color: aliceblue;
+}

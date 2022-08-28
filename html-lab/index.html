@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola Beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Fantastic beast and Where find them</td>
+                <td>200 million USD</td>
+            </tr>
+            <tr>
+                <td>Moonfall</td>
+                <td>138 million USD</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 338 million USD</td>
+        </tfoot>
+    </table>
+    <form action="/formulario" method="post" >
+        <ul>
+            <!-- ul es lista no ordenada-->
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <ol>
+            <!-- ol es lista ordenada-->
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5
+                <ol>
+                    <li style="list-style-type: lower-roman;"> Subelemento 1</li>
+                    <li style="list-style-type: lower-roman;">Subelemento 2</li>
+                    <li>Subelemento 3</li>
+                    <li>Subelemento 4</li>
+                </ol>
+            </li>
+        </ol>
+        <label for= "nombre" >Nombre</label>
+        <input value="defect value" type='text'id="nombre" name = "nombre" placeholder="Nombre"/>
+        <br>
+        <label for= "apellido" >Apellido</label>
+        <input value="defect value again" type='text'id="apellido" name = "apellido" placeholder="Apellido"/>
+        <br>
+        <label for="cometario">Comentario</label>
+        <br>
+        <textarea placeholder = 'Ingrese comentario' name="Comentario" id="comentario" cols="30" rows="10" >defect value ...</textarea>
+        <br>
+        <button type="button"><img src="jpg/dinosaur.jpg">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <button type="menu">Tipo menu</button>
+    </form>
+    <h1>My first heading</h1>
+    <h2>My second heading</h2>
+    <h3>My third heading</h3>
+    <h4>My fourth heading</h4>
+    <h5>My fifth heading</h5>
+    <h6>Hello :D</h6>
+    <p>:D</p>
+    <p>What's up</p>
+    <hr>
+    <h2>Once upon a time</h2>
+    <p>
+        La etiqueta <span style="color:crimson">span es para referenciar</span>
+        texto que queramos <br><br>
+        encontrar despues!
+    </p>
+    <!-- Comentario y no pararece
+    en el explorador -->
+    <a href="https://www.google.com">Open Google</a>
+    <img src="jpg/longcat.jpg" width="400"/>
+</body>
+</html>
