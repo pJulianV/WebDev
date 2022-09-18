@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+<script type="text/javascript">
+function retornarLienzo(x) {
+  var canvas = document.getElementById(x);
+  if (canvas.getContext) {
+    var lienzo = canvas.getContext("2d");   
+    return lienzo;
+  } else
+    return false;
+}
+
+function dibujar() {
+  var lienzo=retornarLienzo("lienzo1");
+  if (lienzo) {
+    lienzo.fillStyle="rgb(255,0,0)";
+    lienzo.fillRect(10,10,50,50);
+    lienzo.fillStyle="rgba(0,255,0,0.3)";
+    lienzo.fillRect(40,40,50,50);
+  }
+}
+
+</script>
+</head>
+
+<body>
+    <div Load="dibujar()">
+<canvas id="lienzo1" width="600" height="600">
+Su navegador no permite utilizar canvas.
+</canvas>></div>
+    <header>
+        Encabazado de la pagina
+    </header>
+    <div>
+        <section class="title">
+            
+        </section>
+    </div>
+    <h1 >Mi Playlist</h1>
+    <a href="https://www.youtube.com/watch?v=QlP3eE9Vlg8">Lofi Game</a>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3Ww8GMbCDMAGwJJ2hd7z7z?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <img width="500px" height="1000px" src="https://images.pexels.com/photos/7767974/pexels-photo-7767974.jpeg?cs=srgb&dl=pexels-adam-ernster-7767974.jpg&fm=jpg">
+    <img src="https://as01.epimg.net/meristation/imagenes/2021/09/16/noticias/1631773599_216616_1631773675_noticia_normal.jpg" alt = "Imagen nocticias">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uuB-emHooIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <audio controls>
+	<source src="http://www.tutorialesprogramacionya.com/audios/gallo.ogg">
+	<source src="http://www.tutorialesprogramacionya.com/audios/gallo.mp3">
+	<source src="http://www.tutorialesprogramacionya.com/audios/gallo.wav">
+    <form action="">
+        <input type="password" name="Contraseña">
+        <br>
+        <input type="text" id="Descripcion" autofoco>
+        <section>
+            <op>
+        </section>
+        <button>
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
+
+<!-- 17.09.SA Tengo que crear un boton con autofoco, esto podria ser una tarea para un sprint en BuJo-->

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Título de la página</title>  
+  <meta charset="UTF-8">
+
+<script type="text/javascript">
+function retornarLienzo(x) {
+  var canvas = document.getElementById(x);
+  if (canvas.getContext) {
+    var lienzo = canvas.getContext("2d");   
+    return lienzo;
+  } else
+    return false;
+}
+
+function dibujar() {
+  var lienzo=retornarLienzo("lienzo1");
+  if (lienzo) {
+    lienzo.fillStyle="rgb(255,0,0)";
+    lienzo.fillRect(10,10,50,50);
+    lienzo.fillStyle="rgba(0,255,0,0.3)";
+    lienzo.fillRect(40,40,50,50);
+  }
+}
+
+    window.addEventListener('load', inicio, false);
+
+    function inicio() {
+        document.getElementById('archivo').addEventListener('change', cargar, false);               
+    }
+
+    function cargar(ev) {
+        document.getElementById('datos').innerHTML='Nombre del archivo:'+ev.target.files[0].name+'<br>'+
+                                                   'Tamaño del archivo:'+ev.target.files[0].size+'<br>'+  
+                                                   'Tipo MIME:'+ev.target.files[0].type;
+        var arch=new FileReader();
+        arch.addEventListener('load',leer,false);
+        arch.readAsText(ev.target.files[0]);
+    }
+    
+    function leer(ev) {
+        document.getElementById('editor').value=ev.target.result;
+    }
+</script>
+
+</head>
+<body onLoad="dibujar()">
+<canvas id="lienzo1" width="600" height="600">
+    Su navegador no permite utilizar canvas.
+</canvas>
+</body>
+<footer>
+    <input type="file" id="archivo"><br>
+    <textarea rows="10" cols="80" id="editor"></textarea>
+    <br>
+    <p id="datos"></p>
+
+</footer>
+</html>
